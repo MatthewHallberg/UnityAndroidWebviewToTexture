@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{077E7833-293B-8FEE-1D49-B2B92697B886}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TestWebview.cs">
     <Files>
-      <File FileName="Assets/Scripts/WebController.cs" Line="62" Column="9" />
-      <File FileName="Assets/Scripts/TestWebview.cs" Line="12" Column="51" />
+      <File FileName="Assets/Scripts/TestWebview.cs" Line="27" Column="43" />
+      <File FileName="Assets/Scripts/WebController.cs" Line="9" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

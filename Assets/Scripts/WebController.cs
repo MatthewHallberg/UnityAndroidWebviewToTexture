@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class WebController : MonoBehaviour {
 
+    public delegate void OnResultRecieved(byte[] result);
+    public static OnResultRecieved resultRecieved;
+
     class AndroidPluginCallback : AndroidJavaProxy {
         public AndroidPluginCallback() : base("com.example.matthew.webViewPlugin.PluginCallback") { }
         public WebController webController;
@@ -58,9 +61,7 @@ public class WebController : MonoBehaviour {
 
     IEnumerator LoadImageRoutine(byte[] bytes) {
         yield return new WaitForEndOfFrame();
-
-
-
+        resultRecieved?.Invoke(bytes);
     }
 
     public void GetImageFromURL(string url) {
